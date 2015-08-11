@@ -1,11 +1,19 @@
 <% provide(:title, "About") %>
 <h1>About</h1>
 <p>
-  The <a href="http://www.railstutorial.org/"><em>Ruby on Rails
-  Tutorial</em></a> is a
-  <a href="http://www.railstutorial.org/book">book</a> and
-  <a href="http://screencasts.railstutorial.org/">screencast series</a>
-  to teach web development with
-  <a href="http://rubyonrails.org/">Ruby on Rails</a>.
-  This is the sample application for the tutorial.
+It may not look very pretty on the surface, but under this Sass-ified css lies the core of a solid Rails app,
+developed by <a href="http://www.twitter.com/pedmands/" target="new">Preston Edmands</a>. Its functions mimic those of Twitter; Users with activated accounts 
+(validated by email after signup) can share "microposts" of a maximum 140 characters and up to one 
+image attachment. Users are able to follow/unfollow each other to see real-time updates in their stream, or visit an
+individual's profile to see their posts. The application is able to scale to accomodate a very large user base,
+with account management and data validation handled automatically.</p> 
+
+<p>The application embodies all the major features of Rails, including, but not limited to: 
+<ul>
+  <li>Secure: High-level authentication and authorization, with password and database encryption to prevent cross site scripting and other security vulnerabilities.</li>
+  <li>Lightweight: Built using the Model/View/Controller (MVC) standard framework, with templates and partials. This means the application will remain swift and responsive, no matter the request load.</li>
+  <li>Solid: The SQL database was designed and modeled using has_many/belongs_to and has_many :through associations.</li>
+  <li>Tested: All programming was borne out in a Test-Drven Development (TDD) environment, using advanced fixtures and database seeding to ensure scalability.</li>
+  <li>Portable: The app was developed and tested on <a href="http://c9.io" target="new">Cloud 9 IDE</a>, and deployed to the production environment through <a href="http://www.heroku.com" target="new">Heroku</a>.</li>
+</ul>
 </p>

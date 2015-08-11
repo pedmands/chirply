@@ -1,5 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 /* mixins, variables, etc. */
 
@@ -65,15 +67,18 @@ p {
 #logo {
   float: left;
   margin-right: 10px;
+  font-family: 'Catamaran';
   font-size: 1.7em;
-  color: white;
   text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
+  color: #cfcfcf;
+  padding: auto 9px;
   &:hover {
     color: white;
     text-decoration: none;
+  }
+  .micro {
+    font-size:.75em;
+    font-weight: bold;
   }
 }
 
@@ -116,6 +121,7 @@ footer {
 /* sidebar */
 
 aside {
+  border-right: 1px solid #e8e8e8;
   section.user_info {
     margin-top: 20px;
   }
@@ -144,6 +150,7 @@ aside {
 .gravatar {
   float: left;
   margin-right: 10px;
+  border-radius: 50%;
 }
 
 .gravatar_edit {
@@ -165,7 +172,7 @@ aside {
     }
     &:hover {
       text-decoration: none;
-      color: blue;
+      color: #337ab7;
     }
   }
   strong {
