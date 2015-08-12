@@ -13,7 +13,33 @@ $gray-medium-light: #eaeaea;
   box-sizing:         border-box;
 }
 
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 /* universal */
+
+.jumbotron {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,595959+9,666666+19,474747+30,2c2c2c+40,000000+44,111111+50,2b2b2b+63,1c1c1c+81,131313+100;Black+Gloss+%231 */
+    background: rgb(76,76,76); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(76,76,76,1) 0%, rgba(89,89,89,1) 9%, rgba(102,102,102,1) 19%, rgba(71,71,71,1) 30%, rgba(44,44,44,1) 40%, rgba(0,0,0,1) 44%, rgba(17,17,17,1) 50%, rgba(43,43,43,1) 63%, rgba(28,28,28,1) 81%, rgba(19,19,19,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(76,76,76,1)), color-stop(9%,rgba(89,89,89,1)), color-stop(19%,rgba(102,102,102,1)), color-stop(30%,rgba(71,71,71,1)), color-stop(40%,rgba(44,44,44,1)), color-stop(44%,rgba(0,0,0,1)), color-stop(50%,rgba(17,17,17,1)), color-stop(63%,rgba(43,43,43,1)), color-stop(81%,rgba(28,28,28,1)), color-stop(100%,rgba(19,19,19,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 9%,rgba(102,102,102,1) 19%,rgba(71,71,71,1) 30%,rgba(44,44,44,1) 40%,rgba(0,0,0,1) 44%,rgba(17,17,17,1) 50%,rgba(43,43,43,1) 63%,rgba(28,28,28,1) 81%,rgba(19,19,19,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 9%,rgba(102,102,102,1) 19%,rgba(71,71,71,1) 30%,rgba(44,44,44,1) 40%,rgba(0,0,0,1) 44%,rgba(17,17,17,1) 50%,rgba(43,43,43,1) 63%,rgba(28,28,28,1) 81%,rgba(19,19,19,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 9%,rgba(102,102,102,1) 19%,rgba(71,71,71,1) 30%,rgba(44,44,44,1) 40%,rgba(0,0,0,1) 44%,rgba(17,17,17,1) 50%,rgba(43,43,43,1) 63%,rgba(28,28,28,1) 81%,rgba(19,19,19,1) 100%); /* IE10+ */
+    background: linear-gradient(135deg,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 9%,rgba(102,102,102,1) 19%,rgba(71,71,71,1) 30%,rgba(44,44,44,1) 40%,rgba(0,0,0,1) 44%,rgba(17,17,17,1) 50%,rgba(43,43,43,1) 63%,rgba(28,28,28,1) 81%,rgba(19,19,19,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
+  h1{ color:#fff; 
+      text-shadow: 5px 5px 3px rgba(0, 0, 0, 1);
+      font-family: 'Exo 2';
+      font-size: 96px;
+  }
+}
 
 body {
   padding-top: 60px;
@@ -38,6 +64,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  font-family:  'Exo 2';
 }
 
 h1 {
@@ -45,6 +72,9 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  #wbolt {
+      color: yellow; 
+      text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);}
 }
 
 h2 {
@@ -61,32 +91,49 @@ p {
   line-height: 1.7em;
 }
 
+.panel-heading {
+  font-family: 'Exo 2';
+}
 
-/* header */
+.title {
+  font-family: 'Exo 2';
+}
+/* logos */
 
 #logo {
   float: left;
-  margin-right: 10px;
-  font-family: 'Catamaran';
+  font-family: 'Exo 2';
   font-size: 1.7em;
   text-transform: uppercase;
   color: #cfcfcf;
-  padding: auto 9px;
   &:hover {
     color: white;
     text-decoration: none;
   }
-  .micro {
-    font-size:.75em;
-    font-weight: bold;
-  }
 }
 
+/* navbar */
+.navbar {
+  .container{
+    .navbar-collapse{
+      .navbar-right{
+        font-family: 'Exo 2';
+          a:hover{
+    background-color:#000;
+  }
+      }
+    }
+  }
+}
+#bolt {
+  color:yellow;
+}
 /* footer */
 
 footer {
   margin-top: 45px;
   padding-top: 5px;
+  clear:both;
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
   a {
@@ -293,5 +340,24 @@ span.picture {
   margin-top: 10px;
   input {
     border: 0;
+  }
+}
+
+/* infographics */
+.infographic {
+  border: 5px solid #c9c9c9;
+  border-radius: 50%;
+  font-family: 'Exo 2';
+  font-size: 20px;
+  height: 120px; width: 120px;
+  display: block;
+  text-align: center;
+  color: #c9c9c9;
+  background:#000;
+  p {
+    @include vertical-align;
+    .fa {
+      font-size:32px;
+    }
   }
 }

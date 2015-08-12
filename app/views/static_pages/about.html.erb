@@ -1,12 +1,21 @@
 <% provide(:title, "About") %>
-<h1>About</h1>
-<p>
-It may not look very pretty on the surface, but under this Sass-ified css lies the core of a solid Rails app,
-developed by <a href="http://www.twitter.com/pedmands/" target="new">Preston Edmands</a>. Its functions mimic those of Twitter; Users with activated accounts 
-(validated by email after signup) can share "microposts" of a maximum 140 characters and up to one 
-image attachment. Users are able to follow/unfollow each other to see real-time updates in their stream, or visit an
-individual's profile to see their posts. The application is able to scale to accomodate a very large user base,
-with account management and data validation handled automatically.</p> 
+<h1>About&nbsp;&nbsp;&nbsp;<i class="fa fa-bolt" id="wbolt"></i> CHIRPLY</h1>
+<div class='container'>
+  <div class="panel panel-default">
+  <div class="panel-body">
+    <p>
+    Welcome to <span class="title">CHIRPLY</span>! Underneath this <a href="http://sass-lang.com/" target="new">Sass</a>-ified css lies the core of a powerful web application, built with Ruby on Rails and
+    developed by <a href="http://www.twitter.com/pedmands/" target="new">Preston Edmands</a>. Its more basic functions mimic those of <a href="http://www.twitter.com" target="new">Twitter</a>; Users with activated accounts 
+    (validated by email after signup) can share "microposts" of a maximum 140 characters and up to one 
+    image attachment. Users are able to follow/unfollow each other to see real-time updates in their stream, or visit an
+    individual's profile to see their posts. The application is able to scale to accomodate a very large user base,
+    with account management and data validation handled automatically.
+    </p> 
+  </div>
+  <div class="panel-footer"><%= link_to "Sign up now!", signup_path, class: "btn btn-sm btn-success" %></div>
+</div>
+  
+</div>
 
 <p>The application embodies all the major features of Rails, including, but not limited to: 
 <ul>
@@ -17,3 +26,30 @@ with account management and data validation handled automatically.</p>
   <li>Portable: The app was developed and tested on <a href="http://c9.io" target="new">Cloud 9 IDE</a>, and deployed to the production environment through <a href="http://www.heroku.com" target="new">Heroku</a>.</li>
 </ul>
 </p>
+<div class="container">
+  <div class='row'>
+    <div class='col-md-4'>
+      <div class='center well'>
+        
+        <div class='infographic'>
+          <p>
+        <i class="fa fa-database"></i><br />Solid
+          </p>
+        </div><hr />
+        The SQL database was designed and modeled using has_many/belongs_to and has_many :through associations.
+      </div>
+    </div>
+    
+    <div class='col-md-4'>
+      <div class='center well'>
+        
+        <div class='infographic'>
+          <p>
+        <i class="fa fa-lock"></i><br />Secure
+          </p>
+        </div><hr />
+        High-level authentication and authorization, with password and database encryption to prevent cross site scripting and other security vulnerabilities.
+      </div>
+    </div>
+  </div>
+</div>
