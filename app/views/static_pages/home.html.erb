@@ -20,24 +20,24 @@
 
 <div class="center jumbotron">
   <h1><i class="fa fa-comments"></i> <i class="fa fa-bolt" id="bolt"></i> CHIRPLY</h1>
-
-  
-
 </div>
 
   <div class='col-xs-6'>
     <div class="center well">
       <h2>
-    A Ruby on Rails application developed by <a href="https://twitter.com/pedmands" target="new">Preston Edmands</a>
+    <i class="fa fa-bolt" id="wbolt"></i> <span class="title">CHIRPLY</span> is a Ruby on Rails application developed by <a href="https://twitter.com/pedmands" target="new">Preston Edmands</a>
   </h2>
       <%= link_to "Read More", about_path, class: "btn btn-lg btn-primary" %>
     </div>
+    <div class="center well">
+      <h2><i class="fa fa-bolt" id="wbolt"></i> <span class="title">CHIRPLY</span> is free and fun. Create and account and share with your friends!</h2>
+      <p><%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-success" %></p>
+    </div>
   </div>
-  
   <div class='col-xs-6'>
    
     <div class="center well">
-      <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-success" %>
+      <p><%= image_tag("screen_shot.png", alt: "Chirply Screen Shot", width: 400, class: 'screen_shot') %></p>
     </div>
   </div>
 

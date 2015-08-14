@@ -4,6 +4,9 @@ gem 'rails',                   '4.2.2'
 gem 'bcrypt',                  '3.1.7'
 gem 'faker',                   '1.4.2'
 gem 'carrierwave',             '0.10.0'
+gem 'bxslider-rails'
+# Add bootstrap slider
+gem 'bootstrap-slider-rails', '~> 4.8.1'
 # Use Font Awesome library for icons
 gem 'font-awesome-sass',       '4.3.2.1'
 # Use Google Fonts for typography

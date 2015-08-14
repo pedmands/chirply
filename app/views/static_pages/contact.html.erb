@@ -1,5 +1,38 @@
 <% provide(:title, 'Contact') %>
+<div class="container">
 <h1>Contact</h1>
-<p>
-
-</p>
+<div class="row">
+  <div class="center well">
+    <%= image_tag("PrestonEdmands.jpg", alt: "Preston Edmands", width: 180, class: 'profile') %><hr />
+    <span class="title">CHIRPLY</span> was programmed and designed entirely by Preston Edmands, a freelance web deveoper in Portland, Maine. For questions or to find out how Preston can make your next
+    project shine, you can <a href="mailto:pedmands@gmailcom" alt="email preston">Email him <i class="fa fa-envelope"></i></a>, or find him on one of the social networks, below.
+  </div>
+</div>
+<div class="row">
+  
+  <div class="col-md-4">
+    <div class="well center">
+      <%= link_to image_tag("Twitter-icon.png", alt: "Preston on Twitter", width: 100),
+            'http://twitter.com/pedmands', target: "_blank" %>
+      <a href="http://www.twitter.com/pedmands" target="_blank" alt="Preston on Twitter"><h2>Preston on Twitter</h2></a>
+    </div>
+  </div>
+  
+   <div class="col-md-4">
+    <div class="well center">
+      <%= link_to image_tag("icon_fb.png", alt: "Preston on Facebook", width: 100),
+            'http://facebook.com/pedmands', target: "_blank" %>
+      <a href="http://www.facebook.com/pedmands" target="_blank" alt="Preston on Facebook"><h2>Preston on Facebook</h2></a>
+    </div>
+  </div>
+  
+   <div class="col-md-4">
+    <div class="well center">
+      <%= link_to image_tag("linkedin.png", alt: "Preston on LinkedIn", width: 100),
+            'https://www.linkedin.com/in/pedmands', target: "_blank" %>
+      <a href="http://www.linkedin.com/in/pedmands" target="_blank" alt="Preston on LinkedIn"><h2>Preston on LinkedIn</h2></a>
+    </div>
+  </div>
+  
+</div>
+    </div>
