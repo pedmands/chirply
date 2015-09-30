@@ -1,6 +1,3 @@
-# Ruby on Rails Tutorial: sample application
+# Chirpl
 
-This is the sample application programmed by Preston Edmands for the
-[*Ruby on Rails Tutorial:
-Learn Web Development with Rails*](http://www.railstutorial.org/)
-by [Michael Hartl](http://www.michaelhartl.com/)
+This is a Ruby application programmed by Preston Edmands
